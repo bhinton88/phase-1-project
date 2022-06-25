@@ -6,7 +6,7 @@
       "weight": "bulky",
       "colorway": "Sweet Emotion" ,
       "image": "https://cdn.shopify.com/s/files/1/0311/8776/3336/products/sweet-emotion-baah-sequoia-yarn.jpg?v=1623887328",
-      "likes": 2
+      "likes": 0
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "weight": "bulky",
       "colorway": "Deep End",
       "image": "https://cdn.shoplightspeed.com/shops/605874/files/40406743/255x381x3/hedgehog-fibres-super-bulky-tantrum-w-co-exclusive.jpg",
-      "likes": 9
+      "likes": 0
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "weight": "bulky",
       "colorway": "Arco Iris" ,
       "image": "https://cdn.shopify.com/s/files/1/0311/8776/3336/products/malabrigo-rasta-arco-iris_e46f7b13-99e2-4da4-9f17-41ff31b79228.jpg?v=1624403246",
-      "likes": 4
+      "likes": 0
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "weight": "bulky",
       "colorway": "Strange Magic",
       "image": "https://cdn.shopify.com/s/files/1/0311/8776/3336/products/strange-magic-baah-yarn-sequoia_600x.jpg?v=1645314381",
-      "likes": 10
+      "likes": 0
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "weight": "bulky",
       "colorway": "Nightingale" ,
       "image": "https://s3.amazonaws.com/images.ecwid.com/images/37039171/2568630196.jpg" ,
-      "likes": 2
+      "likes": 0
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "weight": "worsted",
       "colorway": "Greybow #3" ,
       "image": "https://cdn.shopify.com/s/files/1/1711/0995/products/GreybowBatch3LaBienAimeeConfetti_RESIZE_1.jpg?v=1655900684&width=2200",
-      "likes": 20
+      "likes": 0
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "weight": "worsted",
       "colorway": "Great Barrier Reef",
       "image": "https://cdn.shopify.com/s/files/1/0055/9900/2742/products/image_a350daf8-fdd5-4a9c-b46a-6f8f2ab547b8_1024x1024@2x.jpg?v=1587743535",
-      "likes": 15
+      "likes": 0
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "weight": "worsted",
       "colorway": "80's Rewind" ,
       "image": "https://cdn.shopify.com/s/files/1/0426/4768/3228/products/80s-Rewind-washable-wool_1024x1024@2x.jpg?v=1638326989",
-      "likes": 8
+      "likes": 0
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "weight": "worsted",
       "colorway": "Fire Opal" ,
       "image": "https://www.westportyarns.com/uploads/1/2/6/2/126235975/s175374796313973980_p993_i29_w1000.jpeg",
-      "likes": 4
+      "likes": 0
     },
     {
       "id": 10,
@@ -78,86 +78,87 @@
       "weight": "worsted",
       "colorway": "High Tide" ,
       "image": "https://s3.amazonaws.com/images.ecwid.com/images/37039171/2574214181.jpg",
-      "likes": 4
+      "likes": 0
     },    
     {
       "id": 11,
-      "yarn-company": ,
+      "yarn-company": "A Chick That Knitz" ,
       "weight": "dk",
-      "colorway": ,
-      "image": ,
-      "likes": 
-    },    {
+      "colorway": "Cottage Gardens",
+      "image": "https://s3.amazonaws.com/images.ecwid.com/images/37039171/2400932506.jpg",
+      "likes": 0
+    },    
+    {
       "id": 12,
-      "yarn-company": ,
+      "yarn-company": "Explorer Knits & Fibers",
       "weight": "dk",
-      "colorway": ,
-      "image": ,
-      "likes": 
+      "colorway":"Gates of the Artic NP" ,
+      "image": "https://cdn.shopify.com/s/files/1/0055/9900/2742/products/image_d4d3c6d4-da38-4a8d-915e-997d03e6b94c_1440x.jpg?v=1599325205",
+      "likes": 0
     },
     {
       "id": 13,
-      "yarn-company": ,
+      "yarn-company": "Emma's Yarn " ,
       "weight": "dk",
-      "colorway": ,
-      "image": ,
-      "likes": 
+      "colorway": "Iguana" ,
+      "image": "https://cdn.shopify.com/s/files/1/2960/4900/products/Drapey_DK_Iguana-1_720x.jpg?v=1631151265",
+      "likes": 0
     },
     {
       "id": 14,
-      "yarn-company": ,
+      "yarn-company": "Hedgehog Fibres" ,
       "weight": "dk",
-      "colorway": ,
-      "image": ,
-      "likes": 
+      "colorway": "Kimono",
+      "image": "https://cdn.shoplightspeed.com/shops/616207/files/14700258/1600x2048x2/hedgehog-fibres-firefly-merino-dk-hedgehog.jpg",
+      "likes": 0
     },
     {
       "id": 15,
-      "yarn-company": ,
+      "yarn-company": "Hedgehog Fibres" ,
       "weight": "dk",
-      "colorway": ,
-      "image": ,
-      "likes": 
+      "colorway": "Merman" ,
+      "image": "https://cdn.shopify.com/s/files/1/2440/8253/products/IMG_0001_1200x1200.jpg?v=1646394435" ,
+      "likes": 0
     },
     {
       "id": 16,
-      "yarn-company": ,
+      "yarn-company": "Emma's Yarn" ,
       "weight": "fingering",
-      "colorway": ,
-      "image": ,
-      "likes": 
+      "colorway": "Everglades" ,
+      "image": "https://cdn.shopify.com/s/files/1/0426/4768/3228/products/everglades-practically-perfect_a0c445bb-c65c-476f-8f2a-56ab5fda3884_1200x1200.jpg?v=1638984278",
+      "likes": 0
     },    
     {
       "id": 17,
-      "yarn-company": ,
+      "yarn-company": "Baah Yarn" ,
       "weight": "fingering",
-      "colorway": ,
-      "image": ,
-      "likes": 
+      "colorway": "September 2019" ,
+      "image": "https://media.rainpos.com/7977/september_2019.jpg",
+      "likes": 0
     },
     {
       "id": 18,
-      "yarn-company": ,
+      "yarn-company": "Explorer Knits & Fibers",
       "weight": "fingering",
-      "colorway": ,
-      "image": ,
-      "likes": 
+      "colorway": "Gentle Natured" ,
+      "image": "https://cdn.shopify.com/s/files/1/0458/4128/5288/products/ExplorerKnits_Fibers_-_Gentle_Natured_-_3_Skeins_-_Final_900x.jpg?v=1629848737",
+      "likes": 0
     },
     {
       "id": 19,
-      "yarn-company": ,
+      "yarn-company": "Hedgehog Fibres",
       "weight": "fingering",
-      "colorway": ,
-      "image": ,
-      "likes": 
+      "colorway": "Danube" ,
+      "image": "https://cdn.shopify.com/s/files/1/0458/4128/5288/products/ExplorerKnits_Fibers_-_Gentle_Natured_-_3_Skeins_-_Final_900x.jpg?v=1629848737",
+      "likes": 0
     },
     {
       "id": 20,
-      "yarn-company": ,
+      "yarn-company": "Emma's Yarn " ,
       "weight": "fingering",
-      "colorway": ,
-      "image": ,
-      "likes": 
+      "colorway": "Cherry Merlot" ,
+      "image": "https://cdn.shopify.com/s/files/1/0426/4768/3228/products/Cherry-Merlot-practically-perfect_55ee4400-3afd-4c81-9af6-4aafdef697f4_1200x1200.jpg?v=1638482834",
+      "likes": 0
     }
   ]
 }
