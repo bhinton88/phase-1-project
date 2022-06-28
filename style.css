@@ -1,0 +1,34 @@
+.card {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 30rem;
+  height: auto;
+  display: inline-flex;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px #4b8ce0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yarn-img {
+  justify-self: center;
+  height: 12rem;
+  width: auto;
+}
+
+h1, h3, h4 {
+  margin-block: 0;
+}
+
+#like-btn {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  height: fit-content;
+  margin-block: 1.2rem;
+
+}

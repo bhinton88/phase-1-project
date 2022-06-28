@@ -2,7 +2,7 @@
   "yarns": [
     {
       "id": 1,
-      "yarn-company": "Baah Yarn",
+      "brand": "Baah Yarn",
       "weight": "bulky",
       "colorway": "Sweet Emotion" ,
       "image": "https://cdn.shopify.com/s/files/1/0311/8776/3336/products/sweet-emotion-baah-sequoia-yarn.jpg?v=1623887328",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "yarn-company": "Hedgehog Fibres" ,
+      "brand": "Hedgehog Fibres" ,
       "weight": "bulky",
       "colorway": "Deep End",
       "image": "https://cdn.shoplightspeed.com/shops/605874/files/40406743/255x381x3/hedgehog-fibres-super-bulky-tantrum-w-co-exclusive.jpg",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "yarn-company": "Malabrigo Yarn",
+      "brand": "Malabrigo Yarn",
       "weight": "bulky",
       "colorway": "Arco Iris" ,
       "image": "https://cdn.shopify.com/s/files/1/0311/8776/3336/products/malabrigo-rasta-arco-iris_e46f7b13-99e2-4da4-9f17-41ff31b79228.jpg?v=1624403246",
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "yarn-company": "Baah Yarn" ,
+      "brand": "Baah Yarn" ,
       "weight": "bulky",
       "colorway": "Strange Magic",
       "image": "https://cdn.shopify.com/s/files/1/0311/8776/3336/products/strange-magic-baah-yarn-sequoia_600x.jpg?v=1645314381",
@@ -34,7 +34,7 @@
     },
     {
       "id": 5,
-      "yarn-company": "A Chick That Knitz",
+      "brand": "A Chick That Knitz",
       "weight": "bulky",
       "colorway": "Nightingale" ,
       "image": "https://s3.amazonaws.com/images.ecwid.com/images/37039171/2568630196.jpg" ,
@@ -42,7 +42,7 @@
     },
     {
       "id": 6,
-      "yarn-company": "La Bien Aimee",
+      "brand": "La Bien Aimee",
       "weight": "worsted",
       "colorway": "Greybow #3" ,
       "image": "https://cdn.shopify.com/s/files/1/1711/0995/products/GreybowBatch3LaBienAimeeConfetti_RESIZE_1.jpg?v=1655900684&width=2200",
@@ -50,7 +50,7 @@
     },
     {
       "id": 7,
-      "yarn-company": "Explorer Knits & Fibers",
+      "brand": "Explorer Knits & Fibers",
       "weight": "worsted",
       "colorway": "Great Barrier Reef",
       "image": "https://cdn.shopify.com/s/files/1/0055/9900/2742/products/image_a350daf8-fdd5-4a9c-b46a-6f8f2ab547b8_1024x1024@2x.jpg?v=1587743535",
@@ -58,7 +58,7 @@
     },
     {
       "id": 8,
-      "yarn-company": "Emma's Yarn " ,
+      "brand": "Emma's Yarn " ,
       "weight": "worsted",
       "colorway": "80's Rewind" ,
       "image": "https://cdn.shopify.com/s/files/1/0426/4768/3228/products/80s-Rewind-washable-wool_1024x1024@2x.jpg?v=1638326989",
@@ -66,7 +66,7 @@
     },
     {
       "id": 9,
-      "yarn-company": "Madelinetosh" ,
+      "brand": "Madelinetosh" ,
       "weight": "worsted",
       "colorway": "Fire Opal" ,
       "image": "https://www.westportyarns.com/uploads/1/2/6/2/126235975/s175374796313973980_p993_i29_w1000.jpeg",
@@ -74,7 +74,7 @@
     },
     {
       "id": 10,
-      "yarn-company": "A Chick That Knitz",
+      "brand": "A Chick That Knitz",
       "weight": "worsted",
       "colorway": "High Tide" ,
       "image": "https://s3.amazonaws.com/images.ecwid.com/images/37039171/2574214181.jpg",
@@ -82,7 +82,7 @@
     },    
     {
       "id": 11,
-      "yarn-company": "A Chick That Knitz" ,
+      "brand": "A Chick That Knitz" ,
       "weight": "dk",
       "colorway": "Cottage Gardens",
       "image": "https://s3.amazonaws.com/images.ecwid.com/images/37039171/2400932506.jpg",
@@ -90,7 +90,7 @@
     },    
     {
       "id": 12,
-      "yarn-company": "Explorer Knits & Fibers",
+      "brand": "Explorer Knits & Fibers",
       "weight": "dk",
       "colorway":"Gates of the Artic NP" ,
       "image": "https://cdn.shopify.com/s/files/1/0055/9900/2742/products/image_d4d3c6d4-da38-4a8d-915e-997d03e6b94c_1440x.jpg?v=1599325205",
@@ -98,7 +98,7 @@
     },
     {
       "id": 13,
-      "yarn-company": "Emma's Yarn " ,
+      "brand": "Emma's Yarn " ,
       "weight": "dk",
       "colorway": "Iguana" ,
       "image": "https://cdn.shopify.com/s/files/1/2960/4900/products/Drapey_DK_Iguana-1_720x.jpg?v=1631151265",
@@ -106,7 +106,7 @@
     },
     {
       "id": 14,
-      "yarn-company": "Hedgehog Fibres" ,
+      "brand": "Hedgehog Fibres" ,
       "weight": "dk",
       "colorway": "Kimono",
       "image": "https://cdn.shoplightspeed.com/shops/616207/files/14700258/1600x2048x2/hedgehog-fibres-firefly-merino-dk-hedgehog.jpg",
@@ -114,7 +114,7 @@
     },
     {
       "id": 15,
-      "yarn-company": "Hedgehog Fibres" ,
+      "brand": "Hedgehog Fibres" ,
       "weight": "dk",
       "colorway": "Merman" ,
       "image": "https://cdn.shopify.com/s/files/1/2440/8253/products/IMG_0001_1200x1200.jpg?v=1646394435" ,
@@ -122,7 +122,7 @@
     },
     {
       "id": 16,
-      "yarn-company": "Emma's Yarn" ,
+      "brand": "Emma's Yarn" ,
       "weight": "fingering",
       "colorway": "Everglades" ,
       "image": "https://cdn.shopify.com/s/files/1/0426/4768/3228/products/everglades-practically-perfect_a0c445bb-c65c-476f-8f2a-56ab5fda3884_1200x1200.jpg?v=1638984278",
@@ -130,7 +130,7 @@
     },    
     {
       "id": 17,
-      "yarn-company": "Baah Yarn" ,
+      "brand": "Baah Yarn" ,
       "weight": "fingering",
       "colorway": "September 2019" ,
       "image": "https://media.rainpos.com/7977/september_2019.jpg",
@@ -138,7 +138,7 @@
     },
     {
       "id": 18,
-      "yarn-company": "Explorer Knits & Fibers",
+      "brand": "Explorer Knits & Fibers",
       "weight": "fingering",
       "colorway": "Gentle Natured" ,
       "image": "https://cdn.shopify.com/s/files/1/0458/4128/5288/products/ExplorerKnits_Fibers_-_Gentle_Natured_-_3_Skeins_-_Final_900x.jpg?v=1629848737",
@@ -146,15 +146,15 @@
     },
     {
       "id": 19,
-      "yarn-company": "Hedgehog Fibres",
+      "brand": "Hedgehog Fibres",
       "weight": "fingering",
       "colorway": "Danube" ,
-      "image": "https://cdn.shopify.com/s/files/1/0458/4128/5288/products/ExplorerKnits_Fibers_-_Gentle_Natured_-_3_Skeins_-_Final_900x.jpg?v=1629848737",
+      "image": "https://cdn.shoplightspeed.com/shops/616207/files/21782034/hedgehog-fibres-danube-sock-hedgehog.jpg",
       "likes": 0
     },
     {
       "id": 20,
-      "yarn-company": "Emma's Yarn " ,
+      "brand": "Emma's Yarn " ,
       "weight": "fingering",
       "colorway": "Cherry Merlot" ,
       "image": "https://cdn.shopify.com/s/files/1/0426/4768/3228/products/Cherry-Merlot-practically-perfect_55ee4400-3afd-4c81-9af6-4aafdef697f4_1200x1200.jpg?v=1638482834",
