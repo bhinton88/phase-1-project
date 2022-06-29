@@ -40,6 +40,10 @@ h1, h3, h4 {
   margin-inline: 1rem;
 }
 
-.thumb-down-btn:hover, .thumb-up-btn:hover {
-  background-color: #00ffa257
+.thumb-up-btn:hover {
+  background-color: green
+}
+
+.thumb-down-btn:hover {
+  background-color: red;
 }

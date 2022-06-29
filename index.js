@@ -30,7 +30,7 @@ function addYarn(){
   })
 
   // why is this reading null ???
-  
+
   console.log(document.getElementById('yarn-brands'))
 
   // select.addEventListener('change',sortYarnByBrand)
@@ -90,7 +90,6 @@ function createYarnCard (yarnObj) {
 
   div.querySelector(".thumb-up-btn").addEventListener("click", () => {
     const p = div.querySelector("#likes-container p")
-    console.log(p)
     yarnObj.likes += 1
     p.textContent = yarnObj.likes
     updateLikes(yarnObj)
@@ -98,7 +97,6 @@ function createYarnCard (yarnObj) {
 
   div.querySelector(".thumb-down-btn").addEventListener("click", () => {
     const p = div.querySelector("#likes-container p")
-    console.log(p)
     yarnObj.likes -= 1
     p.textContent = yarnObj.likes
     updateLikes(yarnObj)
