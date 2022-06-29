@@ -47,3 +47,14 @@ h1, h3, h4 {
 .thumb-down-btn:hover {
   background-color: red;
 }
+
+#brands , #weights {
+  display: inline-block;
+  padding: .5rem;
+}
+
+#create-new-yarn {
+  display: inline-flex;
+  gap: 10px;
+  flex-direction: row;
+}

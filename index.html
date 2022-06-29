@@ -11,17 +11,61 @@
   <title>Yarn Book</title>
 </head>
 <body>
-  <p id="brand">Sort by Brand:</p>
-  <p id="weight">Sort by Weight:</p>
-  <select name="yarn-weights" id="yarn-weights">
-  <option value="bulky">bulky</option>
-  <option value="worsted">worsted</option>
-  <option value="dk">dk</option>
-  <option value="fingering">fingering</option>
-  </select>
+  <div id="new-yarn-form">
+    <form id="create-new-yarn">
+      <input 
+      type="text" 
+      name="brand" 
+      placeholder="Enter yarn brand here" 
+      value=""
+      />
+
+      <input 
+      type="text" 
+      name="colorway" 
+      placeholder="Enter colorway here" 
+      value=""
+      />
+
+      <input 
+      type="text" 
+      name="image" 
+      placeholder="Enter image URL here" 
+      value =""
+      />
+
+      <label for="select-weights">Select yarn weight:</label>
+      <select name="select-weights" id="select-weights">
+        <option value="bulky">bulky</option>
+        <option value="worsted">worsted</option>
+        <option value="dk">dk</option>
+        <option value="fingering">fingering</option> 
+        <option value="lace">lace</option>
+      </select>
+
+      <input type="submit" value="Create New Yarn Entry">
+    </form>
+  </div>
+  <br>
+  <div id="brands">
+    <label for="yarn-brands">Sort by Brand:</label>
+    <select name="yarn-brands" id="yarn-brands"></select>
+  </div>
+
+  <div id="weights">
+    <label for="yarn-weights">Sort by Weight:</label>
+    <select name="yarn-weights" id="yarn-weights">
+      <option value="bulky">bulky</option>
+      <option value="worsted">worsted</option>
+      <option value="dk">dk</option>
+      <option value="fingering">fingering</option>
+      <option value="lace">lace</option>
+    </select>
+  </div>
+
+  <button type="button" id="reset-btn">Reset</button>
 
   <section id ="yarn-collection">
-
   </section>
 </body>
 </html>

@@ -1,55 +1,35 @@
 
-let brandNames = []
-
-addYarn()
+addYarn();
 
 function addYarn(){
  fetch("http://localhost:3000/yarns")
  .then(response => response.json())
  .then(data => {
-  const select = document.createElement('select')
-  document.querySelector('#brand').append(select)
-  select.name = "yarn-brands"
-  select.id = "yarn-brands"
 
   // function to create each yarn item and append it to the DOM 
 
   data.map(value => createYarnCard(value))
+  
+  createBrandDropdown();
 
-  // accesing the brandNames array and creating option elements for each brand name to be
-  // used in a sorting functionality later 
+  })
+}
 
+// accesing the brandNames array and creating option elements for each brand name to be
+// used in a sorting functionality later 
+
+let brandNames = [];
+
+function createBrandDropdown() {
   brandNames.forEach(value => {
     const option = document.createElement('option')
 
     option.value = `${value}`
     option.textContent = `${value}`
   
-    select.appendChild(option)
+    document.getElementById('yarn-brands').appendChild(option)
     })  
-  })
-
-  // why is this reading null ???
-
-  console.log(document.getElementById('yarn-brands'))
-
-  // select.addEventListener('change',sortYarnByBrand)
-
-  // function sortYarnByBrand(event){
-  //   fetch("http://localhost:3000/yarns")
-  //   .then(response => response.json())
-  //   .then(data => {
-  //     document.getElementById('yarn-collection').innerHTML = ''
-  //     const filteredArray = data.filter(value => value.brand === event.target.value)
-  //     filteredArray.map(value => createYarnCard(value))
-  //   })
-  // }
-
-}
-
-// why is this reading null ???
-
-console.log(document.querySelector('#yarn-brands'))
+  }
 
 function createYarnCard (yarnObj) {
   const section = document.getElementById("yarn-collection")
@@ -97,11 +77,14 @@ function createYarnCard (yarnObj) {
 
   div.querySelector(".thumb-down-btn").addEventListener("click", () => {
     const p = div.querySelector("#likes-container p")
-    yarnObj.likes -= 1
+    if(yarnObj.likes > 0){
+      yarnObj.likes -= 1
+    } else {
+      yarnObj.likes = 0
+    }
     p.textContent = yarnObj.likes
     updateLikes(yarnObj)
   })
-
 }
 
 // updating likes to the JSON file 
@@ -121,9 +104,7 @@ function updateLikes(yarnObj) {
 
 // functionality to sort yarns by weight 
 
-const select = document.querySelector('#yarn-weights')
-
-select.addEventListener('change', sortYarnByWeight)
+document.getElementById('yarn-weights').addEventListener('change', sortYarnByWeight)
 
 function sortYarnByWeight(event){
   fetch("http://localhost:3000/yarns")
@@ -135,6 +116,61 @@ function sortYarnByWeight(event){
   })
 }
 
+  // functionality to sort yarns by brand name 
+
+  document.getElementById('yarn-brands').addEventListener('change',sortYarnByBrand)
+
+  function sortYarnByBrand(event){
+    fetch("http://localhost:3000/yarns")
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('yarn-collection').innerHTML = ''
+      const filteredArray = data.filter(value => value.brand === event.target.value)
+      filteredArray.map(value => createYarnCard(value))
+    })
+  }
+
+  // functionality to use a reset button to set page to show all entries 
+
+  document.getElementById('reset-btn').addEventListener("click", () =>{
+    document.getElementById('yarn-collection').innerHTML = ''
+    document.getElementById('yarn-brands').innerHTML =''
+    addYarn()
+  })
+
+// functionality to take in a new yarn and add it to the JSON file
+
+document.getElementById('create-new-yarn').addEventListener('submit', createNewYarnEntry)
 
 
-// functionality to post reviews to each yarn 
+function createNewYarnEntry(event) {
+  event.preventDefault()
+  const weightSelect = document.getElementById('select-weights')
+  const newYarnObj ={
+    brand: event.target.brand.value,
+    weight: weightSelect.value,
+    colorway: event.target.colorway.value,
+    image: event.target.image.value,
+    likes: 0,
+    reviews: []
+  }
+  updateDatabase(newYarnObj)
+  document.getElementById('create-new-yarn').reset()
+}
+
+function updateDatabase(newYarnObj) {
+  fetch("http://localhost:3000/yarns",{
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify(newYarnObj)
+  })
+  .then(response => response.json())
+  .then(data => {
+    createYarnCard(data)
+    document.getElementById('yarn-brands').innerHTML =''
+    createBrandDropdown();  
+  })
+}
