@@ -4,12 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   <script defer type="text/javascript" src="index.js"></script>
   <script src="https://kit.fontawesome.com/87a21a89a8.js" crossorigin="anonymous"></script>
 
   <title>Yarn Book</title>
 </head>
+<header>
+  <p>Yarn Book</p>
+</header>
 <body>
   <div id="new-yarn-form">
     <form id="create-new-yarn">
@@ -47,24 +54,25 @@
     </form>
   </div>
   <br>
-  <div id="brands">
-    <label for="yarn-brands">Sort by Brand:</label>
-    <select name="yarn-brands" id="yarn-brands"></select>
+  <div id="sorting-container">
+    <div id="brands">
+      <label for="yarn-brands">Sort by Brand:</label>
+      <select name="yarn-brands" id="yarn-brands"></select>
+    </div>
+
+    <div id="weights">
+      <label for="yarn-weights">Sort by Weight:</label>
+      <select name="yarn-weights" id="yarn-weights">
+        <option value="bulky">bulky</option>
+        <option value="worsted">worsted</option>
+        <option value="dk">dk</option>
+        <option value="fingering">fingering</option>
+        <option value="lace">lace</option>
+      </select>
+    </div>
+
+    <button type="button" id="reset-btn">Reset</button>
   </div>
-
-  <div id="weights">
-    <label for="yarn-weights">Sort by Weight:</label>
-    <select name="yarn-weights" id="yarn-weights">
-      <option value="bulky">bulky</option>
-      <option value="worsted">worsted</option>
-      <option value="dk">dk</option>
-      <option value="fingering">fingering</option>
-      <option value="lace">lace</option>
-    </select>
-  </div>
-
-  <button type="button" id="reset-btn">Reset</button>
-
   <section id ="yarn-collection">
   </section>
 </body>

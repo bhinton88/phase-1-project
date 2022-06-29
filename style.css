@@ -1,3 +1,13 @@
+
+body {
+  background-image: url('images/mel-poole-vJgD2A1CPjE-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+
 .card {
   text-align: center;
   border: grey solid 1px;
@@ -10,6 +20,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: whitesmoke;
 }
 
 .yarn-img {
@@ -41,20 +52,36 @@ h1, h3, h4 {
 }
 
 .thumb-up-btn:hover {
-  background-color: green
+  background-color: green;
 }
 
 .thumb-down-btn:hover {
   background-color: red;
 }
 
-#brands , #weights {
-  display: inline-block;
+#sorting-container {
+  display: inline-flex;
+  flex-direction: column;
   padding: .5rem;
+  justify-content: center;
 }
 
 #create-new-yarn {
   display: inline-flex;
   gap: 10px;
   flex-direction: row;
+}
+
+#weights, #brands {
+  padding: 3px;
+}
+
+#reset-btn {
+  margin: 3px;
+}
+
+header > p {
+  font-family: 'Alfa Slab One', cursive;
+  text-align: center;
+  font-size: 50px;
 }
