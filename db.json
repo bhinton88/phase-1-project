@@ -6,7 +6,8 @@
       "weight": "bulky",
       "colorway": "Sweet Emotion",
       "image": "https://cdn.shopify.com/s/files/1/0311/8776/3336/products/sweet-emotion-baah-sequoia-yarn.jpg?v=1623887328",
-      "likes": 1
+      "likes": 1,
+      "review": []
     },
     {
       "id": 2,
@@ -58,7 +59,7 @@
     },
     {
       "id": 8,
-      "brand": "Emma's Yarn ",
+      "brand": "Emma's Yarn",
       "weight": "worsted",
       "colorway": "80's Rewind",
       "image": "https://cdn.shopify.com/s/files/1/0426/4768/3228/products/80s-Rewind-washable-wool_1024x1024@2x.jpg?v=1638326989",
@@ -98,7 +99,7 @@
     },
     {
       "id": 13,
-      "brand": "Emma's Yarn ",
+      "brand": "Emma's Yarn",
       "weight": "dk",
       "colorway": "Iguana",
       "image": "https://cdn.shopify.com/s/files/1/2960/4900/products/Drapey_DK_Iguana-1_720x.jpg?v=1631151265",
@@ -154,7 +155,7 @@
     },
     {
       "id": 20,
-      "brand": "Emma's Yarn ",
+      "brand": "Emma's Yarn",
       "weight": "fingering",
       "colorway": "Cherry Merlot",
       "image": "https://cdn.shopify.com/s/files/1/0426/4768/3228/products/Cherry-Merlot-practically-perfect_55ee4400-3afd-4c81-9af6-4aafdef697f4_1200x1200.jpg?v=1638482834",

@@ -1,12 +1,12 @@
 .card {
   text-align: center;
   border: grey solid 1px;
-  padding: 1rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
   width: 30rem;
   height: auto;
   display: inline-flex;
-  margin: 1rem 2rem;
-  box-shadow: 3px 4px #4b8ce0;
+  margin: 1rem 1rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -38,4 +38,8 @@ h1, h3, h4 {
 
 .thumb-up-btn .thumb-down-btn {
   margin-inline: 1rem;
+}
+
+.thumb-down-btn:hover, .thumb-up-btn:hover {
+  background-color: #00ffa257
 }

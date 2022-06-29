@@ -1,11 +1,55 @@
 
+let brandNames = []
+
 addYarn()
 
 function addYarn(){
  fetch("http://localhost:3000/yarns")
  .then(response => response.json())
- .then(data => data.map(value => createYarnCard(value)))
+ .then(data => {
+  const select = document.createElement('select')
+  document.querySelector('#brand').append(select)
+  select.name = "yarn-brands"
+  select.id = "yarn-brands"
+
+  // function to create each yarn item and append it to the DOM 
+
+  data.map(value => createYarnCard(value))
+
+  // accesing the brandNames array and creating option elements for each brand name to be
+  // used in a sorting functionality later 
+
+  brandNames.forEach(value => {
+    const option = document.createElement('option')
+
+    option.value = `${value}`
+    option.textContent = `${value}`
+  
+    select.appendChild(option)
+    })  
+  })
+
+  // why is this reading null ???
+  
+  console.log(document.getElementById('yarn-brands'))
+
+  // select.addEventListener('change',sortYarnByBrand)
+
+  // function sortYarnByBrand(event){
+  //   fetch("http://localhost:3000/yarns")
+  //   .then(response => response.json())
+  //   .then(data => {
+  //     document.getElementById('yarn-collection').innerHTML = ''
+  //     const filteredArray = data.filter(value => value.brand === event.target.value)
+  //     filteredArray.map(value => createYarnCard(value))
+  //   })
+  // }
+
 }
+
+// why is this reading null ???
+
+console.log(document.querySelector('#yarn-brands'))
 
 function createYarnCard (yarnObj) {
   const section = document.getElementById("yarn-collection")
@@ -30,6 +74,15 @@ function createYarnCard (yarnObj) {
     <input type="submit" value="submit">
   </form>
   `
+  // using some logic to sort through brand names and only push values that have not yet been added
+
+  if(brandNames.includes(yarnObj.brand)){
+
+  } else {
+    brandNames.push(yarnObj.brand)
+  }
+
+  // append each yarn object to the DOM
 
   section.appendChild(div)
 
@@ -70,7 +123,7 @@ function updateLikes(yarnObj) {
 
 // functionality to sort yarns by weight 
 
-const select = document.querySelector('#yarn-brands')
+const select = document.querySelector('#yarn-weights')
 
 select.addEventListener('change', sortYarnByWeight)
 
@@ -83,3 +136,7 @@ function sortYarnByWeight(event){
     filteredArray.map(value => createYarnCard(value))
   })
 }
+
+
+
+// functionality to post reviews to each yarn 
