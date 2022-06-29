@@ -22,7 +22,7 @@ h1, h3, h4 {
   margin-block: 0;
 }
 
-#like-btn {
+#likes-container {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -30,5 +30,12 @@ h1, h3, h4 {
   justify-content: space-evenly;
   height: fit-content;
   margin-block: 1.2rem;
+}
 
+#btn-container {
+  display: flex;
+}
+
+.thumb-up-btn .thumb-down-btn {
+  margin-inline: 1rem;
 }
