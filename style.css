@@ -7,7 +7,6 @@ body {
   background-size: cover;
 }
 
-
 .card {
   text-align: center;
   border: grey solid 1px;
@@ -33,30 +32,17 @@ h1, h3, h4 {
   margin-block: 0;
 }
 
-#likes-container {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  height: fit-content;
-  margin-block: 1.2rem;
-}
-
-#btn-container {
-  display: flex;
-}
-
-.thumb-up-btn .thumb-down-btn {
-  margin-inline: 1rem;
+.thumb-up-btn {
+  margin-block: 0.5rem;
+  padding-block: 0.75rem
 }
 
 .thumb-up-btn:hover {
   background-color: green;
 }
 
-.thumb-down-btn:hover {
-  background-color: red;
+.like-btn > p {
+  margin-block: 0.2rem;
 }
 
 #sorting-container {

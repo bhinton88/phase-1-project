@@ -6,8 +6,6 @@ function addYarn(){
  .then(response => response.json())
  .then(data => {
 
-  // function to create each yarn item and append it to the DOM 
-
   data.map(value => createYarnCard(value))
   
   createBrandDropdown();
@@ -15,8 +13,7 @@ function addYarn(){
   })
 }
 
-// accesing the brandNames array and creating option elements for each brand name to be
-// used in a sorting functionality later 
+// functionality for creating a list of brand names to use with sorting 
 
 let brandNames = [];
 
@@ -40,27 +37,24 @@ function createYarnCard (yarnObj) {
   <h3>Colorway: ${yarnObj.colorway}</h3>
   <h4>Weight: ${yarnObj.weight}</h4>
   <img src ="${yarnObj.image}" alt = "beautiful hand dyed yarn" class="yarn-img"/>
-  <div id="likes-container">
-    <div id ="btn-container">
-      <button class="thumb-up-btn" id="${yarnObj.id}"> <i class="fa-solid fa-thumbs-up"></i> </button>
-      <button class="thumb-down-btn" id="${yarnObj.id}"> <i class="fa-solid fa-thumbs-down"></i></i> </button>
-    </div>
+  <div id="like-btn">
+    <h5>Number of Likes:<h5>
     <p>${yarnObj.likes}</p>
+    <button class="thumb-up-btn" >Like <i class="fa-solid fa-thumbs-up"></i> </button>
   </div>
-  <form>
-    <textarea class="yarn-review" name"yarn-review" rows="3" cols="50"> leave a review here
-    </textarea>
-    <br>
-    <input type="submit" value="submit">
+  <div id="yarn-reviews">
+    <ul id = "${yarnObj.id}">
+  </div>
+  <form id="submit-comment">
+    <input type="text" placeholder="Leave a comment here" name="review" value=""/>
+    <input type="submit" value="Submit comment"/>
   </form>
   `
-  // using some logic to sort through brand names and only push values that have not yet been added
+  // using some logic to sort through brand names and only push single non-recuring values
 
-  if(brandNames.includes(yarnObj.brand)){
-
-  } else {
+  if(!brandNames.includes(yarnObj.brand)){
     brandNames.push(yarnObj.brand)
-  }
+  } 
 
   // append each yarn object to the DOM
 
@@ -69,23 +63,39 @@ function createYarnCard (yarnObj) {
   // event listener updates for thumb up and thumb down events 
 
   div.querySelector(".thumb-up-btn").addEventListener("click", () => {
-    const p = div.querySelector("#likes-container p")
+    const p = div.querySelector("#like-btn p")
     yarnObj.likes += 1
     p.textContent = yarnObj.likes
     updateLikes(yarnObj)
   })
 
-  div.querySelector(".thumb-down-btn").addEventListener("click", () => {
-    const p = div.querySelector("#likes-container p")
-    if(yarnObj.likes > 0){
-      yarnObj.likes -= 1
-    } else {
-      yarnObj.likes = 0
+  // event listener to post a review to a yarn card
+
+  div.querySelector('#submit-comment').addEventListener("submit", function (event) {
+    event.preventDefault()
+    const reviewObj = {
+      yarn_id: yarnObj.id,
+      comment: event.target.review.value
     }
-    p.textContent = yarnObj.likes
-    updateLikes(yarnObj)
+
+    fetch('http://localhost:3000/comments', {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept' : 'application/json'
+      },
+      body: JSON.stringify(reviewObj)
+    })
+    .then(response => response.json())
+    .then(data => {
+      const commentUl = document.getElementById(`${data.yarn_id}`)
+      const li = document.createElement('li')
+      li.textContent = data.comment
+      commentUl.appendChild(li)
+    })
   })
 }
+
 
 // updating likes to the JSON file 
 
@@ -152,7 +162,6 @@ function createNewYarnEntry(event) {
     colorway: event.target.colorway.value,
     image: event.target.image.value,
     likes: 0,
-    reviews: []
   }
   updateDatabase(newYarnObj)
   document.getElementById('create-new-yarn').reset()
