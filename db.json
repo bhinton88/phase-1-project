@@ -240,6 +240,51 @@
       "yarn_id": 7,
       "comment": "I need 20",
       "id": 3
+    },
+    {
+      "yarn_id": 2,
+      "comment": "wow",
+      "id": 4
+    },
+    {
+      "yarn_id": 4,
+      "comment": "Gorgeous!",
+      "id": 5
+    },
+    {
+      "yarn_id": 24,
+      "comment": "Love the green!",
+      "id": 6
+    },
+    {
+      "yarn_id": 3,
+      "comment": "Endless project ideas",
+      "id": 7
+    },
+    {
+      "yarn_id": 6,
+      "comment": "love the speckles",
+      "id": 8
+    },
+    {
+      "yarn_id": 5,
+      "comment": "All the blue!",
+      "id": 9
+    },
+    {
+      "yarn_id": 11,
+      "comment": "This would look great in a shawl",
+      "id": 10
+    },
+    {
+      "yarn_id": 9,
+      "comment": "A rainbow of color",
+      "id": 11
+    },
+    {
+      "yarn_id": 8,
+      "comment": "Looks like cotton candy",
+      "id": 12
     }
   ]
 }

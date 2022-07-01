@@ -34,11 +34,14 @@ h1, h3, h4 {
 
 .thumb-up-btn {
   margin-block: 0.5rem;
-  padding-block: 0.75rem
+  padding-block: 0.75rem;
+  width: 6rem;
+  
 }
 
 .thumb-up-btn:hover {
-  background-color: green;
+  background-color: lightblue;
+  opacity: 0.6;
 }
 
 .like-btn > p {
@@ -70,4 +73,34 @@ header > p {
   font-family: 'Alfa Slab One', cursive;
   text-align: center;
   font-size: 50px;
+}
+
+div#header-img{
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+
+header > img {
+width: 30%;
+}
+
+#like-btn > p {
+  margin-block: 0.3rem;
+}
+
+#like-btn > h5 {
+  margin-block: 0.3rem;
+}
+
+#yarn-comments > h5 {
+  margin-block: 0.5rem;
+}
+
+#yarn-comments ul {
+  padding-inline: 0;
+}
+
+li {
+  text-align: left;
 }

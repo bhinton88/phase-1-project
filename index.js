@@ -14,6 +14,8 @@ function addYarn(){
   })
 }
 
+// function to add comments to yarn cards 
+
 function addComments() {
   fetch('http://localhost:3000/comments')
   .then(response => response.json())
@@ -47,11 +49,12 @@ function createYarnCard (yarnObj) {
   <h4>Weight: ${yarnObj.weight}</h4>
   <img src ="${yarnObj.image}" alt = "beautiful hand dyed yarn" class="yarn-img"/>
   <div id="like-btn">
-    <h5>Number of Likes:<h5>
+    <h5>Number of Likes:</h5>
     <p>${yarnObj.likes}</p>
     <button class="thumb-up-btn" >Like <i class="fa-solid fa-thumbs-up"></i> </button>
   </div>
   <div id="yarn-comments">
+    <h5>Comments:</h5>
     <ul id = "${yarnObj.id}">
   </div>
   <form id="submit-comment">
@@ -78,7 +81,7 @@ function createYarnCard (yarnObj) {
     updateLikes(yarnObj)
   })
 
-  // event listener to post a review to a yarn card
+  // event listener to post a comment to a yarn card
 
   div.querySelector('#submit-comment').addEventListener("submit", function (event) {
     event.preventDefault()
@@ -86,27 +89,31 @@ function createYarnCard (yarnObj) {
       yarn_id: yarnObj.id,
       comment: event.target.review.value
     }
-
-    fetch('http://localhost:3000/comments', {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept' : 'application/json'
-      },
-      body: JSON.stringify(reviewObj)
-    })
-    .then(response => response.json())
-    .then(data => createComment(data))
-
+    updateCommentsToDatabase(reviewObj)
     div.querySelector('#submit-comment').reset()
   })
 }
+
+// functionality to create a new comment and add it to the JSON file
 
 function createComment(object){
   const commentUl = document.getElementById(`${object.yarn_id}`)
   const li = document.createElement('li')
   li.textContent = object.comment
   commentUl.appendChild(li)
+}
+
+function updateCommentsToDatabase(object) {
+  fetch('http://localhost:3000/comments', {
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept' : 'application/json'
+    },
+    body: JSON.stringify(object)
+  })
+  .then(response => response.json())
+  .then(data => createComment(data))
 }
 
 // updating likes to the JSON file 
