@@ -227,14 +227,19 @@
   ],
   "comments": [
     {
-      "yarn_id": 2,
+      "yarn_id": 1,
       "comment": "Beautiful!",
       "id": 1
     },
     {
       "yarn_id": 2,
-      "comment": "Love it!",
+      "comment": "Love the colors!",
       "id": 2
+    },
+    {
+      "yarn_id": 7,
+      "comment": "I need 20",
+      "id": 3
     }
   ]
 }

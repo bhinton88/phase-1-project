@@ -1,5 +1,6 @@
 
 addYarn();
+addComments();
 
 function addYarn(){
  fetch("http://localhost:3000/yarns")
@@ -10,6 +11,14 @@ function addYarn(){
   
   createBrandDropdown();
 
+  })
+}
+
+function addComments() {
+  fetch('http://localhost:3000/comments')
+  .then(response => response.json())
+  .then(data => {
+  data.map(value => createComment(value))
   })
 }
 
@@ -42,7 +51,7 @@ function createYarnCard (yarnObj) {
     <p>${yarnObj.likes}</p>
     <button class="thumb-up-btn" >Like <i class="fa-solid fa-thumbs-up"></i> </button>
   </div>
-  <div id="yarn-reviews">
+  <div id="yarn-comments">
     <ul id = "${yarnObj.id}">
   </div>
   <form id="submit-comment">
@@ -87,15 +96,18 @@ function createYarnCard (yarnObj) {
       body: JSON.stringify(reviewObj)
     })
     .then(response => response.json())
-    .then(data => {
-      const commentUl = document.getElementById(`${data.yarn_id}`)
-      const li = document.createElement('li')
-      li.textContent = data.comment
-      commentUl.appendChild(li)
-    })
+    .then(data => createComment(data))
+
+    div.querySelector('#submit-comment').reset()
   })
 }
 
+function createComment(object){
+  const commentUl = document.getElementById(`${object.yarn_id}`)
+  const li = document.createElement('li')
+  li.textContent = object.comment
+  commentUl.appendChild(li)
+}
 
 // updating likes to the JSON file 
 
