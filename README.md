@@ -2,16 +2,17 @@
 
 ## Description:
 
-Welcome to Yarn Book, a place for yarn lovers to post their favorite yarns
-and comment/like others favorite yarns. It is like FaceBook but for yarn! 
-A true knitter/crocheter paradise!
+Welcome to Yarn Book, an app for yarn lovers to post their favorite yarn
+and comment/like others favorite yarns.
 
-Features:
+## Features:
 - Ability to post your own favorite yarn
-- Like your favorite yarns
+- Like your favorites
 - Ability to leave a nice comment on a yarn
 - Ability to sort yarns by brand name
 - Ability to sort yarns by yarn weight 
+
+Primary languages used: HTML/CSS, JavaScript 
 
 [Screenshot of the main page](images/yarncard.png)
 
@@ -20,6 +21,13 @@ Features:
 If you don't have `json-server` installed, run `$ npm i -g json-server`.
 
 If you already have it installed, run the server by: `$ json-server --watch db.json`.
+
+## Author
+
+👤 **Bobby Hinton**
+
+* Github: [@bhinton88](https://github.com/bhinton88)
+* LinkedIn: [@bhinton88](https://linkedin.com/in/bhinton88)
 
 ## Acknowledgements 
 
