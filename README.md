@@ -13,7 +13,7 @@ Features:
 - Ability to sort yarns by brand name
 - Ability to sort yarns by yarn weight 
 
-[](images/yarncard.png)
+[Screenshot of the main page](images/yarncard.png)
 
 ## Use `json-server` to Provide a Basic RESTful Data Store
 
