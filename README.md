@@ -31,5 +31,4 @@ If you already have it installed, run the server by: `$ json-server --watch db.j
 
 ## Acknowledgements 
 
-A special thanks to Andrew Brooks who graceously designed the fun yarn book logo at the 
-top of the page 
+A special thanks to Andrew Brooks for the yarnbook logo
