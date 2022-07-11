@@ -14,8 +14,6 @@ function addYarn(){
   })
 }
 
-// function to add comments to yarn cards 
-
 function addComments() {
   fetch('http://localhost:3000/comments')
   .then(response => response.json())
@@ -23,8 +21,6 @@ function addComments() {
   data.map(value => createComment(value))
   })
 }
-
-// functionality for creating a list of brand names to use with sorting 
 
 let brandNames = [];
 
@@ -62,17 +58,14 @@ function createYarnCard (yarnObj) {
     <input type="submit" value="Submit comment"/>
   </form>
   `
-  // using some logic to sort through brand names and only push single non-recuring values
 
   if(!brandNames.includes(yarnObj.brand)){
     brandNames.push(yarnObj.brand)
   } 
 
-  // append each yarn object to the DOM
 
   section.appendChild(div)
 
-  // event listener updates for thumb up and thumb down events 
 
   div.querySelector(".thumb-up-btn").addEventListener("click", () => {
     const p = div.querySelector("#like-btn p")
@@ -81,7 +74,6 @@ function createYarnCard (yarnObj) {
     updateLikes(yarnObj)
   })
 
-  // event listener to post a comment to a yarn card
 
   div.querySelector('#submit-comment').addEventListener("submit", function (event) {
     event.preventDefault()
@@ -93,8 +85,6 @@ function createYarnCard (yarnObj) {
     div.querySelector('#submit-comment').reset()
   })
 }
-
-// functionality to create a new comment and add it to the JSON file
 
 function createComment(object){
   const commentUl = document.getElementById(`${object.yarn_id}`)
@@ -116,8 +106,6 @@ function updateCommentsToDatabase(object) {
   .then(data => createComment(data))
 }
 
-// updating likes to the JSON file 
-
 function updateLikes(yarnObj) {
   fetch(`http://localhost:3000/yarns/${yarnObj.id}`, {
     method: "PATCH",
@@ -131,8 +119,6 @@ function updateLikes(yarnObj) {
   .then(data => console.log(data))
 }
 
-// functionality to sort yarns by weight 
-
 document.getElementById('yarn-weights').addEventListener('change', sortYarnByWeight)
 
 function sortYarnByWeight(event){
@@ -144,8 +130,6 @@ function sortYarnByWeight(event){
     filteredArray.map(value => createYarnCard(value))
   })
 }
-
-  // functionality to sort yarns by brand name 
 
   document.getElementById('yarn-brands').addEventListener('change',sortYarnByBrand)
 
@@ -159,8 +143,6 @@ function sortYarnByWeight(event){
     })
   }
 
-  // functionality to use a reset button to set page to show all entries 
-
   document.getElementById('reset-btn').addEventListener("click", () =>{
     document.getElementById('yarn-collection').innerHTML = ''
     document.getElementById('yarn-brands').innerHTML =''
@@ -168,7 +150,6 @@ function sortYarnByWeight(event){
     addComments()
   })
 
-// functionality to take in a new yarn and add it to the JSON file
 
 document.getElementById('create-new-yarn').addEventListener('submit', createNewYarnEntry)
 
