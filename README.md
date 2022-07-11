@@ -2,8 +2,8 @@
 
 ## Description:
 
-Welcome to Yarn Book, an app for yarn lovers to post their favorite yarn
-and comment/like others favorite yarns.
+Welcome to Yarn Book, a simple application for yarn lovers to post their favorite yarn
+and comment/like others favorites. 
 
 ## Features:
 - Ability to post your own favorite yarn
@@ -31,4 +31,4 @@ If you already have it installed, run the server by: `$ json-server --watch db.j
 
 ## Acknowledgements 
 
-A special thanks to Andrew Brooks for the yarnbook logo
+A special thanks to Andrew Brooks for the YarnBook logo
