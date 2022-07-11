@@ -6,7 +6,7 @@
       "weight": "bulky",
       "colorway": "Sweet Emotion",
       "image": "https://cdn.shopify.com/s/files/1/0311/8776/3336/products/sweet-emotion-baah-sequoia-yarn.jpg?v=1623887328",
-      "likes": 4
+      "likes": 8
     },
     {
       "id": 2,
@@ -54,7 +54,7 @@
       "weight": "worsted",
       "colorway": "Great Barrier Reef",
       "image": "https://cdn.shopify.com/s/files/1/0055/9900/2742/products/image_a350daf8-fdd5-4a9c-b46a-6f8f2ab547b8_1024x1024@2x.jpg?v=1587743535",
-      "likes": 3
+      "likes": 7
     },
     {
       "id": 8,
@@ -118,7 +118,7 @@
       "weight": "dk",
       "colorway": "Merman",
       "image": "https://cdn.shopify.com/s/files/1/2440/8253/products/IMG_0001_1200x1200.jpg?v=1646394435",
-      "likes": 0
+      "likes": 2
     },
     {
       "id": 16,
@@ -134,7 +134,7 @@
       "weight": "fingering",
       "colorway": "September 2019",
       "image": "https://media.rainpos.com/7977/september_2019.jpg",
-      "likes": 0
+      "likes": 7
     },
     {
       "id": 18,
@@ -231,6 +231,14 @@
       "image": "https://www.fourpurls.com/wp-content/uploads/2021/02/ix6hp1cehus6cffb4tku.jpg",
       "likes": 0,
       "id": 29
+    },
+    {
+      "brand": "Emma's Yarn",
+      "weight": "lace",
+      "colorway": "Hammered",
+      "image": "https://www.fourpurls.com/wp-content/uploads/2021/12/ljt8co1fk23xxtonnm4d.jpeg",
+      "likes": 0,
+      "id": 30
     }
   ],
   "comments": [
@@ -241,58 +249,23 @@
     },
     {
       "yarn_id": 2,
-      "comment": "Love the colors!",
+      "comment": "Gorgeous!",
       "id": 2
     },
     {
-      "yarn_id": 7,
-      "comment": "I need 20",
+      "yarn_id": 3,
+      "comment": "Lovely!",
       "id": 3
     },
     {
-      "yarn_id": 2,
-      "comment": "wow",
+      "yarn_id": 7,
+      "comment": "I need 20!",
       "id": 4
     },
     {
-      "yarn_id": 4,
-      "comment": "Gorgeous!",
+      "yarn_id": 15,
+      "comment": "Love the colors!",
       "id": 5
-    },
-    {
-      "yarn_id": 24,
-      "comment": "Love the green!",
-      "id": 6
-    },
-    {
-      "yarn_id": 3,
-      "comment": "Endless project ideas",
-      "id": 7
-    },
-    {
-      "yarn_id": 6,
-      "comment": "love the speckles",
-      "id": 8
-    },
-    {
-      "yarn_id": 5,
-      "comment": "All the blue!",
-      "id": 9
-    },
-    {
-      "yarn_id": 11,
-      "comment": "This would look great in a shawl",
-      "id": 10
-    },
-    {
-      "yarn_id": 9,
-      "comment": "A rainbow of color",
-      "id": 11
-    },
-    {
-      "yarn_id": 8,
-      "comment": "Looks like cotton candy",
-      "id": 12
     }
   ]
 }

@@ -165,6 +165,7 @@ function sortYarnByWeight(event){
     document.getElementById('yarn-collection').innerHTML = ''
     document.getElementById('yarn-brands').innerHTML =''
     addYarn()
+    addComments()
   })
 
 // functionality to take in a new yarn and add it to the JSON file
